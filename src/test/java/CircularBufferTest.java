@@ -45,5 +45,20 @@ public class CircularBufferTest {
 
     }
 
+    @Test
+    public void write_until_full_and_write_C_new_data_should_be_C_next_to_Z(){
+        CircularBuffer cb = new CircularBuffer();
+        for (int i = 0; i < 10; i++) {
+            cb.writeData("A" + i);
+        }
+        boolean result = cb.isFull();
+        cb.writeData("Z");
+        cb.writeData("C");
+        assertTrue("Buffer not Full", result);
+        assertEquals("Don't have Z","Z", cb.readData());
+        assertEquals("Don't have C","C", cb.readData());
+
+    }
+
 
 }
