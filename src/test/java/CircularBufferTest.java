@@ -60,5 +60,16 @@ public class CircularBufferTest {
 
     }
 
+    @Test
+    public void create_new_buffer_by_custom_size_6(){
+        CircularBuffer cb = new CircularBuffer();
+        cb.setBufferSize(6);
+        for (int i = 0; i < 6; i++) {
+            cb.writeData("A" + i);
+        }
+        boolean result = cb.isFull();
+        assertTrue("Buffer not Full", result);
+    }
+
 
 }

@@ -23,4 +23,4 @@
   * TC03 => write_A_B_to_buffer_should_read_A_B
   * TC04 => write_until_full_and_write_Z_new_data_override_by_Z
   * TC05 => write_until_full_and_write_C_new_data_should_be_C_next_to_Z
-  * TC06 => create_new_buffer_by_custom_size
+  * TC06 => create_new_buffer_by_custom_size_6

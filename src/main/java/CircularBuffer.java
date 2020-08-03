@@ -30,4 +30,8 @@ public class CircularBuffer {
     public String readData() {
         return this.buffer[((readPointer++) % this.buffer.length - 1 ) + 1 ]  ;
     }
+
+    public void setBufferSize(int input) {
+        this.bufferSize = input;
+    }
 }
