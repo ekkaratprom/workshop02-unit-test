@@ -1,4 +1,4 @@
-# workshop02-unit-test
+# workshop01-unit-test
 
 ### Circular buffer
 
